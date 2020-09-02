@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>OpenLayer | 前端学习日志</title>
+    <meta name="description" content="my study log">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.cf9c9213.css" as="style"><link rel="preload" href="/assets/js/app.9b313d47.js" as="script"><link rel="preload" href="/assets/js/2.4bf212e8.js" as="script"><link rel="preload" href="/assets/js/38.493eefde.js" as="script"><link rel="prefetch" href="/assets/js/10.f2d103fd.js"><link rel="prefetch" href="/assets/js/11.33575be4.js"><link rel="prefetch" href="/assets/js/12.63b2fce1.js"><link rel="prefetch" href="/assets/js/13.692ae22b.js"><link rel="prefetch" href="/assets/js/14.8d953be8.js"><link rel="prefetch" href="/assets/js/15.55a6242d.js"><link rel="prefetch" href="/assets/js/16.d58f7781.js"><link rel="prefetch" href="/assets/js/17.17fb6526.js"><link rel="prefetch" href="/assets/js/18.b97b86dc.js"><link rel="prefetch" href="/assets/js/19.cc381d1a.js"><link rel="prefetch" href="/assets/js/20.164ed89e.js"><link rel="prefetch" href="/assets/js/21.ad42f5b9.js"><link rel="prefetch" href="/assets/js/22.206e414d.js"><link rel="prefetch" href="/assets/js/23.45644994.js"><link rel="prefetch" href="/assets/js/24.c3a4f621.js"><link rel="prefetch" href="/assets/js/25.7d283e6f.js"><link rel="prefetch" href="/assets/js/26.4b4b924d.js"><link rel="prefetch" href="/assets/js/27.2ca66b1f.js"><link rel="prefetch" href="/assets/js/28.754382f8.js"><link rel="prefetch" href="/assets/js/29.1a8e6bd3.js"><link rel="prefetch" href="/assets/js/3.68d6810e.js"><link rel="prefetch" href="/assets/js/30.07790abe.js"><link rel="prefetch" href="/assets/js/31.438b6500.js"><link rel="prefetch" href="/assets/js/32.da59c1b4.js"><link rel="prefetch" href="/assets/js/33.31336004.js"><link rel="prefetch" href="/assets/js/34.8a0050e3.js"><link rel="prefetch" href="/assets/js/35.210902da.js"><link rel="prefetch" href="/assets/js/36.3cd75e09.js"><link rel="prefetch" href="/assets/js/37.10a14803.js"><link rel="prefetch" href="/assets/js/39.f25d1902.js"><link rel="prefetch" href="/assets/js/4.048ff8f3.js"><link rel="prefetch" href="/assets/js/40.ce91389a.js"><link rel="prefetch" href="/assets/js/41.3b084704.js"><link rel="prefetch" href="/assets/js/42.74fd7b36.js"><link rel="prefetch" href="/assets/js/43.5151b982.js"><link rel="prefetch" href="/assets/js/44.c7b0a7f8.js"><link rel="prefetch" href="/assets/js/45.cc19d4ac.js"><link rel="prefetch" href="/assets/js/46.16d696d5.js"><link rel="prefetch" href="/assets/js/47.28572ab1.js"><link rel="prefetch" href="/assets/js/48.bf30d900.js"><link rel="prefetch" href="/assets/js/49.4e40bbea.js"><link rel="prefetch" href="/assets/js/5.8f069aa3.js"><link rel="prefetch" href="/assets/js/50.92df4fe8.js"><link rel="prefetch" href="/assets/js/51.983bf137.js"><link rel="prefetch" href="/assets/js/52.8e9176f4.js"><link rel="prefetch" href="/assets/js/53.3c147736.js"><link rel="prefetch" href="/assets/js/54.9939b16d.js"><link rel="prefetch" href="/assets/js/55.4b2b7569.js"><link rel="prefetch" href="/assets/js/56.1e051ca2.js"><link rel="prefetch" href="/assets/js/57.ee0151c9.js"><link rel="prefetch" href="/assets/js/58.b8b0f7a5.js"><link rel="prefetch" href="/assets/js/59.73e9672e.js"><link rel="prefetch" href="/assets/js/6.2e4b1887.js"><link rel="prefetch" href="/assets/js/60.6cb7f6c0.js"><link rel="prefetch" href="/assets/js/61.04c67ffc.js"><link rel="prefetch" href="/assets/js/62.513b6c7e.js"><link rel="prefetch" href="/assets/js/63.d3c0f9fc.js"><link rel="prefetch" href="/assets/js/64.80740fd6.js"><link rel="prefetch" href="/assets/js/65.1f286298.js"><link rel="prefetch" href="/assets/js/66.956bc111.js"><link rel="prefetch" href="/assets/js/67.68453c46.js"><link rel="prefetch" href="/assets/js/68.9000d41e.js"><link rel="prefetch" href="/assets/js/69.78db0538.js"><link rel="prefetch" href="/assets/js/7.70b7e5f0.js"><link rel="prefetch" href="/assets/js/70.3fd0e7c9.js"><link rel="prefetch" href="/assets/js/71.61f3112e.js"><link rel="prefetch" href="/assets/js/72.30120d65.js"><link rel="prefetch" href="/assets/js/73.642a7a88.js"><link rel="prefetch" href="/assets/js/74.bec483ce.js"><link rel="prefetch" href="/assets/js/75.f146d868.js"><link rel="prefetch" href="/assets/js/76.99529a90.js"><link rel="prefetch" href="/assets/js/8.5d8d45e8.js"><link rel="prefetch" href="/assets/js/9.453972e3.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.cf9c9213.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">前端学习日志</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/CSS/" class="nav-link">CSS</a></div><div class="nav-item"><a href="/JavaScript/" class="nav-link">JavaScript</a></div><div class="nav-item"><a href="/Vue/动态组件/" class="nav-link">Vue</a></div><div class="nav-item"><a href="/webpack/webpack基础配置.html" class="nav-link">webpack</a></div><div class="nav-item"><a href="/React/" class="nav-link">React</a></div><div class="nav-item"><a href="/MongoDB/MongoDB初识.html" class="nav-link">MongoDB</a></div><div class="nav-item"><a href="/Nodejs/Nginx.html" class="nav-link">Nodejs</a></div><div class="nav-item"><a href="/Openlayer/OpenLayer.html" class="nav-link router-link-exact-active router-link-active">Openlayer</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/CSS/" class="nav-link">CSS</a></div><div class="nav-item"><a href="/JavaScript/" class="nav-link">JavaScript</a></div><div class="nav-item"><a href="/Vue/动态组件/" class="nav-link">Vue</a></div><div class="nav-item"><a href="/webpack/webpack基础配置.html" class="nav-link">webpack</a></div><div class="nav-item"><a href="/React/" class="nav-link">React</a></div><div class="nav-item"><a href="/MongoDB/MongoDB初识.html" class="nav-link">MongoDB</a></div><div class="nav-item"><a href="/Nodejs/Nginx.html" class="nav-link">Nodejs</a></div><div class="nav-item"><a href="/Openlayer/OpenLayer.html" class="nav-link router-link-exact-active router-link-active">Openlayer</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/Openlayer/OpenLayer.html" class="active sidebar-link">Openlayer初识</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Openlayer/OpenLayer.html#openlayer" class="sidebar-link">OpenLayer</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Openlayer/OpenLayer.html#切片图层（tilelayer）" class="sidebar-link">切片图层（TileLayer）</a></li><li class="sidebar-sub-header"><a href="/Openlayer/OpenLayer.html#矢量图层（vectorlayers）" class="sidebar-link">矢量图层（VectorLayers）</a></li></ul></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="openlayer"><a href="#openlayer" class="header-anchor">#</a> OpenLayer</h2> <h3 id="切片图层（tilelayer）"><a href="#切片图层（tilelayer）" class="header-anchor">#</a> 切片图层（TileLayer）</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token string">'ol/ol.css'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span>Map<span class="token punctuation">,</span> View<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'ol'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> TileLayer <span class="token keyword">from</span> <span class="token string">'ol/layer/Tile'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> XYZSource <span class="token keyword">from</span> <span class="token string">'ol/source/XYZ'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span>fromLonLat<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'ol/proj'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">new</span> <span class="token class-name">Map</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token comment">// 容器</span>
+  target<span class="token operator">:</span> <span class="token string">'map-container'</span><span class="token punctuation">,</span>
+  <span class="token comment">// 图层</span>
+  layers<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token keyword">new</span> <span class="token class-name">TileLayer</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      source<span class="token operator">:</span> <span class="token keyword">new</span> <span class="token class-name">XYZSource</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        url<span class="token operator">:</span> <span class="token string">'http://tile.stamen.com/terrain/{z}/{x}/{y}.jpg'</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token comment">// 视图</span>
+  view<span class="token operator">:</span> <span class="token keyword">new</span> <span class="token class-name">View</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    center<span class="token operator">:</span> <span class="token function">fromLonLat</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    zoom<span class="token operator">:</span> <span class="token number">2</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="矢量图层（vectorlayers）"><a href="#矢量图层（vectorlayers）" class="header-anchor">#</a> 矢量图层（VectorLayers）</h3> <ul><li><p>基础配置</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token string">'ol/ol.css'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span>Map<span class="token punctuation">,</span> View<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'ol'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> VectorLayer <span class="token keyword">from</span> <span class="token string">'ol/layer/Vector'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> VectorSource <span class="token keyword">from</span> <span class="token string">'ol/source/Vector'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> GeoJSON <span class="token keyword">from</span> <span class="token string">'ol/format/GeoJSON'</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> url <span class="token operator">=</span> <span class="token string">'./data/countries.json'</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> source <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">VectorSource</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  url<span class="token punctuation">,</span>
+  format<span class="token operator">:</span> <span class="token keyword">new</span> <span class="token class-name">GeoJSON</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> map <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Map</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  target<span class="token operator">:</span> <span class="token string">'map-container'</span><span class="token punctuation">,</span>
+  layers<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  view<span class="token operator">:</span> <span class="token keyword">new</span> <span class="token class-name">View</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    center<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    zoom<span class="token operator">:</span> <span class="token number">3</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> layer <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">VectorLayer</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  source
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+map<span class="token punctuation">.</span><span class="token function">addLayer</span><span class="token punctuation">(</span>layer<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div></li> <li><p>异步渲染图层</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> sync <span class="token keyword">from</span> <span class="token string">'ol-hashed'</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 常规配置</span>
+
+<span class="token function">sync</span><span class="token punctuation">(</span>map<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div></li> <li><p>拖拽JSON数据渲染地图</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> DragAndDrop <span class="token keyword">from</span> <span class="token string">'ol/interaction/DragAndDrop'</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 常规配置</span>
+
+map<span class="token punctuation">.</span><span class="token function">addInteraction</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">DragAndDrop</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  source<span class="token punctuation">,</span>
+  formatConstructors<span class="token operator">:</span> <span class="token punctuation">[</span>GeoJSON<span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div></li> <li><p>允许修改图层</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> Modify <span class="token keyword">from</span> <span class="token string">'ol/interaction/Modify'</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 常规配置</span>
+
+map<span class="token punctuation">.</span><span class="token function">addInteraction</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Modify</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  source
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div></li> <li><p>绘制图形</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> Draw <span class="token keyword">from</span> <span class="token string">'ol/interaction/Draw'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> GeometryType <span class="token keyword">from</span> <span class="token string">'ol/geom/GeometryType'</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 常规配置</span>
+
+map<span class="token punctuation">.</span><span class="token function">addInteraction</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Draw</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token comment">// 此处绘制多边形</span>
+  type<span class="token operator">:</span> GeometryType<span class="token punctuation">.</span><span class="token constant">POLYGON</span><span class="token punctuation">,</span>
+  source
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div></li> <li><p>下载，清除图层</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 获取“清除”按钮，点击清空图层</span>
+<span class="token keyword">const</span> clear <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'clear'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+clear<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'click'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  source<span class="token punctuation">.</span><span class="token function">clear</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 获取</span>
+<span class="token keyword">const</span> format <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">GeoJSON</span><span class="token punctuation">(</span><span class="token punctuation">{</span>featureProjection<span class="token operator">:</span> <span class="token string">'EPSG:3857'</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> download <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'download'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+source<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'change'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> features <span class="token operator">=</span> source<span class="token punctuation">.</span><span class="token function">getFeatures</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> json <span class="token operator">=</span> format<span class="token punctuation">.</span><span class="token function">writeFeatures</span><span class="token punctuation">(</span>features<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  download<span class="token punctuation">.</span>href <span class="token operator">=</span> <span class="token string">'data:text/json;charset=utf-8,'</span> <span class="token operator">+</span> json<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div></li> <li><p>自定义图层样式</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 引入style模块定义样式，fill填充色块，stroke描边</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span>Style<span class="token punctuation">,</span> Fill<span class="token punctuation">,</span> Stroke<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'ol/style'</span><span class="token punctuation">;</span>
+</code></pre></div></li></ul> <p>const style1 = new Style({
+fill: new Fill({
+color: 'red'
+}),
+stroke: new Stroke({
+color: 'green'
+})
+});
+const style2 = new Style({
+fill: new Fill({
+color: 'blue'
+}),
+stroke: new Stroke({
+color: 'red'
+})
+});
+const layer = new VectorLayer({
+source,
+// 动态样式
+style: (feature, resolution) =&gt; {
+const name = feature.get('name').toUpperCase();
+return name &lt; 'N' ? style1 : style2;
+}
+});
+map.addLayer(layer);</p> <div class="language- extra-class"><pre class="language-text"><code>
+```js
+import {getArea} from 'ol/sphere';
+import colormap from 'colormap';
+const min = 1e8; // the smallest area
+const max = 2e13; // the biggest area
+const steps = 50;
+const ramp = colormap({
+  colormap: 'blackbody',
+  nshades: steps
+});
+
+function clamp(value, low, high) {
+  return Math.max(low, Math.min(value, high));
+}
+
+function getColor(feature) {
+  const area = getArea(feature.getGeometry());
+  const f = Math.pow(clamp((area - min) / (max - min), 0, 1), 1 / 2);
+  const index = Math.round(f * (steps - 1));
+  return ramp[index];
+}
+const layer = new VectorLayer({
+  source,
+  // 根据国家名渲染图层样式
+  style: (feature) =&gt; {
+    return new Style({
+      fill: new Fill({
+        color: getColor(feature)
+      }),
+      stroke: new Stroke({
+        color: 'rgba(255,255,255,0.8)'
+      })
+    });
+  }
+});
+map.addLayer(layer);
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.9b313d47.js" defer></script><script src="/assets/js/2.4bf212e8.js" defer></script><script src="/assets/js/38.493eefde.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>配置项解析 | 前端学习日志</title>
+    <meta name="description" content="my study log">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.cf9c9213.css" as="style"><link rel="preload" href="/assets/js/app.9b313d47.js" as="script"><link rel="preload" href="/assets/js/2.4bf212e8.js" as="script"><link rel="preload" href="/assets/js/73.642a7a88.js" as="script"><link rel="prefetch" href="/assets/js/10.f2d103fd.js"><link rel="prefetch" href="/assets/js/11.33575be4.js"><link rel="prefetch" href="/assets/js/12.63b2fce1.js"><link rel="prefetch" href="/assets/js/13.692ae22b.js"><link rel="prefetch" href="/assets/js/14.8d953be8.js"><link rel="prefetch" href="/assets/js/15.55a6242d.js"><link rel="prefetch" href="/assets/js/16.d58f7781.js"><link rel="prefetch" href="/assets/js/17.17fb6526.js"><link rel="prefetch" href="/assets/js/18.b97b86dc.js"><link rel="prefetch" href="/assets/js/19.cc381d1a.js"><link rel="prefetch" href="/assets/js/20.164ed89e.js"><link rel="prefetch" href="/assets/js/21.ad42f5b9.js"><link rel="prefetch" href="/assets/js/22.206e414d.js"><link rel="prefetch" href="/assets/js/23.45644994.js"><link rel="prefetch" href="/assets/js/24.c3a4f621.js"><link rel="prefetch" href="/assets/js/25.7d283e6f.js"><link rel="prefetch" href="/assets/js/26.4b4b924d.js"><link rel="prefetch" href="/assets/js/27.2ca66b1f.js"><link rel="prefetch" href="/assets/js/28.754382f8.js"><link rel="prefetch" href="/assets/js/29.1a8e6bd3.js"><link rel="prefetch" href="/assets/js/3.68d6810e.js"><link rel="prefetch" href="/assets/js/30.07790abe.js"><link rel="prefetch" href="/assets/js/31.438b6500.js"><link rel="prefetch" href="/assets/js/32.da59c1b4.js"><link rel="prefetch" href="/assets/js/33.31336004.js"><link rel="prefetch" href="/assets/js/34.8a0050e3.js"><link rel="prefetch" href="/assets/js/35.210902da.js"><link rel="prefetch" href="/assets/js/36.3cd75e09.js"><link rel="prefetch" href="/assets/js/37.10a14803.js"><link rel="prefetch" href="/assets/js/38.493eefde.js"><link rel="prefetch" href="/assets/js/39.f25d1902.js"><link rel="prefetch" href="/assets/js/4.048ff8f3.js"><link rel="prefetch" href="/assets/js/40.ce91389a.js"><link rel="prefetch" href="/assets/js/41.3b084704.js"><link rel="prefetch" href="/assets/js/42.74fd7b36.js"><link rel="prefetch" href="/assets/js/43.5151b982.js"><link rel="prefetch" href="/assets/js/44.c7b0a7f8.js"><link rel="prefetch" href="/assets/js/45.cc19d4ac.js"><link rel="prefetch" href="/assets/js/46.16d696d5.js"><link rel="prefetch" href="/assets/js/47.28572ab1.js"><link rel="prefetch" href="/assets/js/48.bf30d900.js"><link rel="prefetch" href="/assets/js/49.4e40bbea.js"><link rel="prefetch" href="/assets/js/5.8f069aa3.js"><link rel="prefetch" href="/assets/js/50.92df4fe8.js"><link rel="prefetch" href="/assets/js/51.983bf137.js"><link rel="prefetch" href="/assets/js/52.8e9176f4.js"><link rel="prefetch" href="/assets/js/53.3c147736.js"><link rel="prefetch" href="/assets/js/54.9939b16d.js"><link rel="prefetch" href="/assets/js/55.4b2b7569.js"><link rel="prefetch" href="/assets/js/56.1e051ca2.js"><link rel="prefetch" href="/assets/js/57.ee0151c9.js"><link rel="prefetch" href="/assets/js/58.b8b0f7a5.js"><link rel="prefetch" href="/assets/js/59.73e9672e.js"><link rel="prefetch" href="/assets/js/6.2e4b1887.js"><link rel="prefetch" href="/assets/js/60.6cb7f6c0.js"><link rel="prefetch" href="/assets/js/61.04c67ffc.js"><link rel="prefetch" href="/assets/js/62.513b6c7e.js"><link rel="prefetch" href="/assets/js/63.d3c0f9fc.js"><link rel="prefetch" href="/assets/js/64.80740fd6.js"><link rel="prefetch" href="/assets/js/65.1f286298.js"><link rel="prefetch" href="/assets/js/66.956bc111.js"><link rel="prefetch" href="/assets/js/67.68453c46.js"><link rel="prefetch" href="/assets/js/68.9000d41e.js"><link rel="prefetch" href="/assets/js/69.78db0538.js"><link rel="prefetch" href="/assets/js/7.70b7e5f0.js"><link rel="prefetch" href="/assets/js/70.3fd0e7c9.js"><link rel="prefetch" href="/assets/js/71.61f3112e.js"><link rel="prefetch" href="/assets/js/72.30120d65.js"><link rel="prefetch" href="/assets/js/74.bec483ce.js"><link rel="prefetch" href="/assets/js/75.f146d868.js"><link rel="prefetch" href="/assets/js/76.99529a90.js"><link rel="prefetch" href="/assets/js/8.5d8d45e8.js"><link rel="prefetch" href="/assets/js/9.453972e3.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.cf9c9213.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">前端学习日志</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/CSS/" class="nav-link">CSS</a></div><div class="nav-item"><a href="/JavaScript/" class="nav-link">JavaScript</a></div><div class="nav-item"><a href="/Vue/动态组件/" class="nav-link">Vue</a></div><div class="nav-item"><a href="/webpack/webpack基础配置.html" class="nav-link">webpack</a></div><div class="nav-item"><a href="/React/" class="nav-link">React</a></div><div class="nav-item"><a href="/MongoDB/MongoDB初识.html" class="nav-link">MongoDB</a></div><div class="nav-item"><a href="/Nodejs/Nginx.html" class="nav-link">Nodejs</a></div><div class="nav-item"><a href="/Openlayer/OpenLayer.html" class="nav-link">Openlayer</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/CSS/" class="nav-link">CSS</a></div><div class="nav-item"><a href="/JavaScript/" class="nav-link">JavaScript</a></div><div class="nav-item"><a href="/Vue/动态组件/" class="nav-link">Vue</a></div><div class="nav-item"><a href="/webpack/webpack基础配置.html" class="nav-link">webpack</a></div><div class="nav-item"><a href="/React/" class="nav-link">React</a></div><div class="nav-item"><a href="/MongoDB/MongoDB初识.html" class="nav-link">MongoDB</a></div><div class="nav-item"><a href="/Nodejs/Nginx.html" class="nav-link">Nodejs</a></div><div class="nav-item"><a href="/Openlayer/OpenLayer.html" class="nav-link">Openlayer</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/webpack/webpack基础配置.html" class="sidebar-link">webpack基础配置</a></li><li><a href="/webpack/webpack配置项详尽解析.html" class="active sidebar-link">webpack配置项详尽解析</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/webpack/webpack配置项详尽解析.html#配置项解析" class="sidebar-link">配置项解析</a></li></ul></li><li><a href="/webpack/webpack优化配置.html" class="sidebar-link">webpack优化配置</a></li><li><a href="/webpack/webpack生产环境配置.html" class="sidebar-link">webpack生产环境配置</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="配置项解析"><a href="#配置项解析" class="header-anchor">#</a> 配置项解析</h2> <ol><li><h4 id="entry"><a href="#entry" class="header-anchor">#</a> entry</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/*
+   *entry：入口起点
+   *  1.String  =&gt;  './src/index.html'
+   *    单入口，将所有文件打包成一个chunk，最终输出一个bundle文件
+   *    此时chunk名称默认为main
+   *  2.array   =&gt;  [&quot;./src/index.js&quot;, &quot;./src/add.js&quot;]
+   *    多入口，所有入口文件最终只会打包成一个chunk，最终输出一个bundle文件
+   *    也就是说，index.js以外的js文件会打包进index文件中
+   *      --在HMR中让html文件热更新生效
+   *  3.object  =&gt;  &quot;{index: &quot;./src/index.js&quot;,add: &quot;./src/add.js&quot;}&quot;
+   *    多入口，几个入口文件打包几个chunk，最终输出几个bundle文件
+   *    对象中采取键值对（key：value）存储形式，输出的chunk名即为key
+   *
+   *  -----特殊情况：dll
+   *    entry:{
+   *      多文件打包成一个chunk，最终输出一个bundle文件
+   *      react:['react','react-router','redux',...],
+   *      jquery:'jquery'
+   *    }
+   */</span>
+</code></pre></div></li> <li><h4 id="output"><a href="#output" class="header-anchor">#</a> output</h4> <div class="language-js extra-class"><pre class="language-js"><code> output<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">//文件名称（目录+指定文件名称）</span>
+    filename<span class="token operator">:</span> <span class="token string">&quot;js/[name].js&quot;</span><span class="token punctuation">,</span>
+    <span class="token comment">//输出文件目录（将来所有资源输出的公共目录）</span>
+    path<span class="token operator">:</span> <span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">&quot;build&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token comment">//所有资源引入公共路径前缀，例如：public.js =&gt; /public.js</span>
+    <span class="token comment">// publicPath: &quot;/&quot;,</span>
+    <span class="token comment">//非入口chunk名称 =&gt;通过import方式引入的文件或optimization（存疑）</span>
+    <span class="token comment">//非入口文件的chunk都是数字，从0开始计</span>
+    chunkFilename<span class="token operator">:</span> <span class="token string">&quot;js/[name]_chunk.js&quot;</span><span class="token punctuation">,</span>
+    library<span class="token operator">:</span> <span class="token string">&quot;[name]&quot;</span><span class="token punctuation">,</span> <span class="token comment">//整个库向外暴露的名称，可在打包完成后的main.js首行看到</span>
+    libraryTarget<span class="token operator">:</span> <span class="token string">&quot;window&quot;</span> <span class="token comment">//变量添加到哪个平台上，此处自动暴露给window</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+</code></pre></div></li> <li><h4 id="devserver"><a href="#devserver" class="header-anchor">#</a> devServer</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//开发环境专用，调试代码</span>
+  devServer<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">//运行代码的目录</span>
+    contentBase<span class="token operator">:</span> <span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">&quot;build&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token comment">//监视contentBase指定的目录，一旦变化则reload重载</span>
+    watchContentBase<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token comment">//监视文件</span>
+    watchOptions<span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token comment">//忽略文件</span>
+      ignored<span class="token operator">:</span> <span class="token regex">/node_modules/</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">//启动gzip压缩</span>
+    compress<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token comment">//指定监听端口号</span>
+    port<span class="token operator">:</span> <span class="token number">7000</span><span class="token punctuation">,</span>
+    <span class="token comment">//指定域名</span>
+    host<span class="token operator">:</span> <span class="token string">&quot;localhost&quot;</span><span class="token punctuation">,</span>
+    open<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token comment">//开启HMR</span>
+    hot<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token comment">//不要显示启动服务器的日志</span>
+    clientLogLevel<span class="token operator">:</span> <span class="token string">&quot;none&quot;</span><span class="token punctuation">,</span>
+    <span class="token comment">//除基本启动信息以外，其他不打印</span>
+    quiet<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token comment">//如果出错不要全屏提示</span>
+    overlay<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token comment">//服务器代理解决跨域问题</span>
+    proxy<span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token comment">//一旦devserver服务器(7000)接收到/api/xxx的请求，就会把请求转发到另外的服务器(3000)</span>
+      <span class="token string">&quot;/api&quot;</span><span class="token punctuation">{</span>
+        target<span class="token operator">:</span><span class="token string">&quot;http://loaclhost:3000&quot;</span><span class="token punctuation">,</span>
+        <span class="token comment">//发送请求时，请求路径重写：将/api/xxx --&gt; /xxx（去掉api）</span>
+       	pathRewrite<span class="token operator">:</span> <span class="token punctuation">{</span>
+         	<span class="token string">&quot;^/api&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
+       	<span class="token punctuation">}</span>    
+      <span class="token punctuation">}</span> 
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+</code></pre></div></li> <li><h4 id="optimization"><a href="#optimization" class="header-anchor">#</a> optimization</h4> <div class="language-js extra-class"><pre class="language-js"><code>optimization<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">//提取公共代码成单独chunk</span>
+    splitChunks<span class="token operator">:</span> <span class="token punctuation">{</span>
+      chunks<span class="token operator">:</span> <span class="token string">&quot;all&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">//将当前模块的记录其他模板的hash单独打包成一个文件runtime</span>
+    <span class="token comment">//只有runtime文件和手动更改的文件会变化，剩下的文件会保持不变（持久延长）</span>
+    <span class="token comment">//解决提取公共代码修改时别的文件缓存失效的问题</span>
+    runtimeChunk<span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token function-variable function">name</span><span class="token operator">:</span> <span class="token parameter">entrypoint</span> <span class="token operator">=&gt;</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">runtime-</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>entrypoint<span class="token punctuation">.</span>name<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    minimizer<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token comment">//生产环境压缩方案解决：主要是css和js,需要引入terster-webpack-plugin</span>
+      <span class="token keyword">new</span> <span class="token class-name">TerserWebpackPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        <span class="token comment">//开启缓存</span>
+        cache<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        <span class="token comment">//多进程打包</span>
+        parallel<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        <span class="token comment">//启动source-map</span>
+        sourceMap<span class="token operator">:</span> <span class="token boolean">true</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+</code></pre></div></li> <li><h4 id="resolve"><a href="#resolve" class="header-anchor">#</a> resolve</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//解析模块规则</span>
+  resolve<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">//配置解析模块路径别名,可以理解为给路径上别名</span>
+    alias<span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token comment">//如此处'./src/css'路径别名为$css</span>
+      $css<span class="token operator">:</span> <span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">&quot;src/css&quot;</span><span class="token punctuation">)</span>
+      <span class="token comment">//配置省略文件路径的后缀名</span>
+      extensions<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;.js&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;.css&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;.json&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token comment">//解析模块时搜寻的目录</span>
+      modules<span class="token operator">:</span> <span class="token string">&quot;node_modules&quot;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+</code></pre></div></li></ol></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">3/4/2020, 9:30:23 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/webpack/webpack基础配置.html" class="prev">webpack基础配置</a></span> <span class="next"><a href="/webpack/webpack优化配置.html">webpack优化配置</a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.9b313d47.js" defer></script><script src="/assets/js/2.4bf212e8.js" defer></script><script src="/assets/js/73.642a7a88.js" defer></script>
+  </body>
+</html>

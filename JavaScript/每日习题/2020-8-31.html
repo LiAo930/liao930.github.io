@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>CSS继承 | 前端学习日志</title>
+    <meta name="description" content="my study log">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.cf9c9213.css" as="style"><link rel="preload" href="/assets/js/app.9b313d47.js" as="script"><link rel="preload" href="/assets/js/2.4bf212e8.js" as="script"><link rel="preload" href="/assets/js/33.31336004.js" as="script"><link rel="prefetch" href="/assets/js/10.f2d103fd.js"><link rel="prefetch" href="/assets/js/11.33575be4.js"><link rel="prefetch" href="/assets/js/12.63b2fce1.js"><link rel="prefetch" href="/assets/js/13.692ae22b.js"><link rel="prefetch" href="/assets/js/14.8d953be8.js"><link rel="prefetch" href="/assets/js/15.55a6242d.js"><link rel="prefetch" href="/assets/js/16.d58f7781.js"><link rel="prefetch" href="/assets/js/17.17fb6526.js"><link rel="prefetch" href="/assets/js/18.b97b86dc.js"><link rel="prefetch" href="/assets/js/19.cc381d1a.js"><link rel="prefetch" href="/assets/js/20.164ed89e.js"><link rel="prefetch" href="/assets/js/21.ad42f5b9.js"><link rel="prefetch" href="/assets/js/22.206e414d.js"><link rel="prefetch" href="/assets/js/23.45644994.js"><link rel="prefetch" href="/assets/js/24.c3a4f621.js"><link rel="prefetch" href="/assets/js/25.7d283e6f.js"><link rel="prefetch" href="/assets/js/26.4b4b924d.js"><link rel="prefetch" href="/assets/js/27.2ca66b1f.js"><link rel="prefetch" href="/assets/js/28.754382f8.js"><link rel="prefetch" href="/assets/js/29.1a8e6bd3.js"><link rel="prefetch" href="/assets/js/3.68d6810e.js"><link rel="prefetch" href="/assets/js/30.07790abe.js"><link rel="prefetch" href="/assets/js/31.438b6500.js"><link rel="prefetch" href="/assets/js/32.da59c1b4.js"><link rel="prefetch" href="/assets/js/34.8a0050e3.js"><link rel="prefetch" href="/assets/js/35.210902da.js"><link rel="prefetch" href="/assets/js/36.3cd75e09.js"><link rel="prefetch" href="/assets/js/37.10a14803.js"><link rel="prefetch" href="/assets/js/38.493eefde.js"><link rel="prefetch" href="/assets/js/39.f25d1902.js"><link rel="prefetch" href="/assets/js/4.048ff8f3.js"><link rel="prefetch" href="/assets/js/40.ce91389a.js"><link rel="prefetch" href="/assets/js/41.3b084704.js"><link rel="prefetch" href="/assets/js/42.74fd7b36.js"><link rel="prefetch" href="/assets/js/43.5151b982.js"><link rel="prefetch" href="/assets/js/44.c7b0a7f8.js"><link rel="prefetch" href="/assets/js/45.cc19d4ac.js"><link rel="prefetch" href="/assets/js/46.16d696d5.js"><link rel="prefetch" href="/assets/js/47.28572ab1.js"><link rel="prefetch" href="/assets/js/48.bf30d900.js"><link rel="prefetch" href="/assets/js/49.4e40bbea.js"><link rel="prefetch" href="/assets/js/5.8f069aa3.js"><link rel="prefetch" href="/assets/js/50.92df4fe8.js"><link rel="prefetch" href="/assets/js/51.983bf137.js"><link rel="prefetch" href="/assets/js/52.8e9176f4.js"><link rel="prefetch" href="/assets/js/53.3c147736.js"><link rel="prefetch" href="/assets/js/54.9939b16d.js"><link rel="prefetch" href="/assets/js/55.4b2b7569.js"><link rel="prefetch" href="/assets/js/56.1e051ca2.js"><link rel="prefetch" href="/assets/js/57.ee0151c9.js"><link rel="prefetch" href="/assets/js/58.b8b0f7a5.js"><link rel="prefetch" href="/assets/js/59.73e9672e.js"><link rel="prefetch" href="/assets/js/6.2e4b1887.js"><link rel="prefetch" href="/assets/js/60.6cb7f6c0.js"><link rel="prefetch" href="/assets/js/61.04c67ffc.js"><link rel="prefetch" href="/assets/js/62.513b6c7e.js"><link rel="prefetch" href="/assets/js/63.d3c0f9fc.js"><link rel="prefetch" href="/assets/js/64.80740fd6.js"><link rel="prefetch" href="/assets/js/65.1f286298.js"><link rel="prefetch" href="/assets/js/66.956bc111.js"><link rel="prefetch" href="/assets/js/67.68453c46.js"><link rel="prefetch" href="/assets/js/68.9000d41e.js"><link rel="prefetch" href="/assets/js/69.78db0538.js"><link rel="prefetch" href="/assets/js/7.70b7e5f0.js"><link rel="prefetch" href="/assets/js/70.3fd0e7c9.js"><link rel="prefetch" href="/assets/js/71.61f3112e.js"><link rel="prefetch" href="/assets/js/72.30120d65.js"><link rel="prefetch" href="/assets/js/73.642a7a88.js"><link rel="prefetch" href="/assets/js/74.bec483ce.js"><link rel="prefetch" href="/assets/js/75.f146d868.js"><link rel="prefetch" href="/assets/js/76.99529a90.js"><link rel="prefetch" href="/assets/js/8.5d8d45e8.js"><link rel="prefetch" href="/assets/js/9.453972e3.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.cf9c9213.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">前端学习日志</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/CSS/" class="nav-link">CSS</a></div><div class="nav-item"><a href="/JavaScript/" class="nav-link router-link-active">JavaScript</a></div><div class="nav-item"><a href="/Vue/动态组件/" class="nav-link">Vue</a></div><div class="nav-item"><a href="/webpack/webpack基础配置.html" class="nav-link">webpack</a></div><div class="nav-item"><a href="/React/" class="nav-link">React</a></div><div class="nav-item"><a href="/MongoDB/MongoDB初识.html" class="nav-link">MongoDB</a></div><div class="nav-item"><a href="/Nodejs/Nginx.html" class="nav-link">Nodejs</a></div><div class="nav-item"><a href="/Openlayer/OpenLayer.html" class="nav-link">Openlayer</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/CSS/" class="nav-link">CSS</a></div><div class="nav-item"><a href="/JavaScript/" class="nav-link router-link-active">JavaScript</a></div><div class="nav-item"><a href="/Vue/动态组件/" class="nav-link">Vue</a></div><div class="nav-item"><a href="/webpack/webpack基础配置.html" class="nav-link">webpack</a></div><div class="nav-item"><a href="/React/" class="nav-link">React</a></div><div class="nav-item"><a href="/MongoDB/MongoDB初识.html" class="nav-link">MongoDB</a></div><div class="nav-item"><a href="/Nodejs/Nginx.html" class="nav-link">Nodejs</a></div><div class="nav-item"><a href="/Openlayer/OpenLayer.html" class="nav-link">Openlayer</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>JavaScript数据类型</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>作用域和闭包</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Ajax跨域</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>每日习题</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/JavaScript/每日习题/2020-8-29.html" class="sidebar-link">2020-8-29</a></li><li><a href="/JavaScript/每日习题/2020-8-31.html" class="active sidebar-link">2020-8-31</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li><li><a href="/JavaScript/new操作符和原型链.html" class="sidebar-link">new操作符和原型链</a></li><li><a href="/JavaScript/对象创建和继承.html" class="sidebar-link">对象创建和继承</a></li><li><a href="/JavaScript/URLSearchParams.html" class="sidebar-link">查询条件封装对象URLSearchParams</a></li><li><a href="/JavaScript/BOM相关.html" class="sidebar-link">BOM相关</a></li><li><a href="/JavaScript/DOM.html" class="sidebar-link">DOM</a></li><li><a href="/JavaScript/ES6.html" class="sidebar-link">ES6</a></li><li><a href="/JavaScript/函数中按值传递的理解.html" class="sidebar-link">函数中按值传递的理解</a></li><li><a href="/JavaScript/javaScript中的Event Loop机制.html" class="sidebar-link">javaScript中的Event Loop机制</a></li><li><a href="/JavaScript/MockJs.html" class="sidebar-link">MockJs</a></li><li><a href="/JavaScript/js使用技巧.html" class="sidebar-link">js使用技巧</a></li><li><a href="/JavaScript/拖拽API.html" class="sidebar-link">拖拽API</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="css继承"><a href="#css继承" class="header-anchor">#</a> <code>CSS</code>继承</h3> <p>继承就是指子节点默认使用父节点的样式属性。 不可继承的属性太多了不要背，记住可以继承的属性有哪些就行了。</p> <p>可以继承的属性很少，只有颜色，文字，字体间距行高对齐方式，和列表的样式可以继承。</p> <ul><li><p>所有元素可继承：visibility和cursor；</p></li> <li><p>内联元素可继承：letter-spacing、word-spacing、white-space、line-height、color、font、font-family、font-size、font-style、font-variant、font-weight、text-decoration、text-transform、direction；</p></li> <li><p>块状元素可继承：text-indent和text-align；</p></li> <li><p>列表元素可继承：list-style、list-style-type、list-style-position、list-style-image。</p></li></ul> <h3 id="阻止ie和各大浏览器默认行为"><a href="#阻止ie和各大浏览器默认行为" class="header-anchor">#</a> 阻止IE和各大浏览器默认行为</h3> <ul><li><p>阻止默认事件：</p> <div class="language-js extra-class"><pre class="language-js"><code>e<span class="token punctuation">.</span><span class="token function">preventDefault</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+e<span class="token punctuation">.</span>returnValue <span class="token operator">=</span> <span class="token boolean">false</span> <span class="token punctuation">(</span><span class="token constant">IE</span><span class="token punctuation">)</span>
+</code></pre></div></li> <li><p>阻止冒泡：</p> <div class="language-js extra-class"><pre class="language-js"><code>e<span class="token punctuation">.</span><span class="token function">stopPropagation</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+e<span class="token punctuation">.</span>cancelBubble <span class="token operator">=</span> <span class="token boolean">true</span> <span class="token punctuation">(</span><span class="token constant">IE</span><span class="token punctuation">)</span>
+</code></pre></div></li></ul> <h3 id="隐式转换"><a href="#隐式转换" class="header-anchor">#</a> 隐式转换</h3> <h3 id="commonjs"><a href="#commonjs" class="header-anchor">#</a> <code>CommonJS</code></h3> <div class="language- extra-class"><pre class="language-text"><code>浏览器不兼容CommonJS的根本原因，在于缺少四个Node.js环境的变量。
+module
+exports
+require
+global
+</code></pre></div><h3 id="foreach循环中止问题"><a href="#foreach循环中止问题" class="header-anchor">#</a> <code>forEach</code>循环中止问题</h3> <p><code>arr.forEach</code>不可中止，但可以使用<code>arr.some</code>和<code>arr.every</code>来代替。当使用<code>return true</code>可以跳出<strong>some</strong>循环，<code>return false</code>可以跳出<strong>every</strong>循环</p> <h3 id="钥匙和门锁问题"><a href="#钥匙和门锁问题" class="header-anchor">#</a> 钥匙和门锁问题</h3> <div class="language-markdown extra-class"><pre class="language-markdown"><code>有 N 个房间，开始时你位于 0 号房间。每个房间有不同的号码：0，1，2，...，N-1，并且房间里可能有一些钥匙能使你进入下一个房间。
+
+在形式上，对于每个房间 i 都有一个钥匙列表 rooms[i]，每个钥匙 rooms<span class="token url">[<span class="token content">i</span>][<span class="token variable">j</span>]</span> 由 [0,1，...，N-1] 中的一个整数表示，其中 N = rooms.length。 钥匙 rooms<span class="token url">[<span class="token content">i</span>][<span class="token variable">j</span>]</span> = v 可以打开编号为 v 的房间。
+
+最初，除 0 号房间外的其余所有房间都被锁住。
+
+你可以自由地在房间之间来回走动。
+
+如果能进入每个房间返回 true，否则返回 false。
+
+示例 1：
+
+输入: [[1],[2],[3],[]]
+输出: true
+解释:  
+我们从 0 号房间开始，拿到钥匙 1。
+之后我们去 1 号房间，拿到钥匙 2。
+然后我们去 2 号房间，拿到钥匙 3。
+最后我们去了 3 号房间。
+由于我们能够进入每个房间，我们返回 true。
+示例 2：
+
+输入：[[1,3],[3,0,1],[2],[0]]
+输出：false
+解释：我们不能进入 2 号房间。
+提示：
+
+1 &lt;= rooms.length &lt;= 1000
+0 &lt;= rooms[i].length &lt;= 1000
+所有房间中的钥匙数量总计不超过 3000。
+
+</code></pre></div><p>解法思路：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @param {number[][]} rooms
+ * @return {boolean}
+ */</span>
+<span class="token keyword">var</span> <span class="token function-variable function">canVisitAllRooms</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">rooms</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> n <span class="token operator">=</span> rooms<span class="token punctuation">.</span>length<span class="token punctuation">;</span> <span class="token comment">//n个房间</span>
+    <span class="token keyword">let</span> visited <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Array</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">fill</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//记录是否可进入</span>
+    
+    
+    <span class="token comment">//DFS</span>
+    <span class="token comment">// const dfs = (key) =&gt; {</span>
+    <span class="token comment">//     if(visited[key]) return;</span>
+    <span class="token comment">//     visited[key] = true;</span>
+    <span class="token comment">//     for(let i = 0;i&lt;rooms[key].length;i++){</span>
+    <span class="token comment">//         dfs(rooms[key][i]);</span>
+    <span class="token comment">//     }</span>
+    <span class="token comment">// }</span>
+    
+    <span class="token comment">// dfs(0);</span>
+    
+    
+    <span class="token comment">//BFS</span>
+    <span class="token comment">// visited[0] = true; //记录是否访问过</span>
+
+    <span class="token comment">// let queue = rooms[0]; //队列</span>
+
+    <span class="token comment">// while(queue.length &gt; 0){</span>
+    <span class="token comment">//     let cur = queue.shift(); //当前钥匙</span>
+    <span class="token comment">//     if(!visited[cur]){</span>
+    <span class="token comment">//         visited[cur] = true;</span>
+    <span class="token comment">//         queue.push(...rooms[cur]);</span>
+    <span class="token comment">//     }</span>
+    <span class="token comment">// }</span>
+
+    <span class="token keyword">return</span> visited<span class="token punctuation">.</span><span class="token function">every</span><span class="token punctuation">(</span><span class="token parameter">v</span> <span class="token operator">=&gt;</span> v <span class="token operator">===</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/JavaScript/每日习题/2020-8-29.html" class="prev">2020-8-29</a></span> <span class="next"><a href="/JavaScript/new操作符和原型链.html">new操作符和原型链</a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.9b313d47.js" defer></script><script src="/assets/js/2.4bf212e8.js" defer></script><script src="/assets/js/33.31336004.js" defer></script>
+  </body>
+</html>
